@@ -1,0 +1,10 @@
+{
+  "__resolveType": "site/sections/Quiz/Quiz.tsx",
+  "props": {
+    "steps": [],
+    "result": {
+      "products": []
+    }
+  },
+  "data": {}
+}

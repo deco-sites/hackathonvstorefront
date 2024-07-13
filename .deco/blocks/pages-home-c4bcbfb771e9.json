@@ -44,6 +44,50 @@
       "preload": true
     },
     {
+      "__resolveType": "site/sections/Images/CarrouselBrand.tsx",
+      "imgs": [
+        {
+          "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/b5ea5fb1-c6fd-4514-8fa2-5c954e4346e3",
+          "alt": "deco"
+        },
+        {
+          "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/b5ea5fb1-c6fd-4514-8fa2-5c954e4346e3",
+          "alt": "deco"
+        },
+        {
+          "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/b5ea5fb1-c6fd-4514-8fa2-5c954e4346e3",
+          "alt": "deco"
+        },
+        {
+          "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/b5ea5fb1-c6fd-4514-8fa2-5c954e4346e3",
+          "alt": "deco"
+        },
+        {
+          "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/b5ea5fb1-c6fd-4514-8fa2-5c954e4346e3",
+          "alt": "deco"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Product/ProductShelf.tsx",
+      "title": "Featured Products",
+      "cta": "/mono",
+      "products": {
+        "__resolveType": "shopify/loaders/ProductList.ts",
+        "props": {
+          "sort": "",
+          "count": 12,
+          "query": "a"
+        },
+        "filters": {
+          "tags": [],
+          "productTypes": [],
+          "productVendors": [],
+          "variantOptions": []
+        }
+      }
+    },
+    {
       "__resolveType": "site/sections/Mosaics/Mosaic.tsx",
       "banners": [
         {
@@ -79,31 +123,6 @@
       "newGrid": "'banner1 banner1 banner3'\r\n'banner4 banner2 banner2'"
     },
     {
-      "__resolveType": "site/sections/Images/CarrouselBrand.tsx",
-      "imgs": [
-        {
-          "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/b5ea5fb1-c6fd-4514-8fa2-5c954e4346e3",
-          "alt": "deco"
-        },
-        {
-          "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/b5ea5fb1-c6fd-4514-8fa2-5c954e4346e3",
-          "alt": "deco"
-        },
-        {
-          "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/b5ea5fb1-c6fd-4514-8fa2-5c954e4346e3",
-          "alt": "deco"
-        },
-        {
-          "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/b5ea5fb1-c6fd-4514-8fa2-5c954e4346e3",
-          "alt": "deco"
-        },
-        {
-          "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/b5ea5fb1-c6fd-4514-8fa2-5c954e4346e3",
-          "alt": "deco"
-        }
-      ]
-    },
-    {
       "__resolveType": "site/sections/Quiz/Quiz.tsx",
       "props": {
         "title": "👗 Descubra Seu Estilo de Roupa Perfeito com Nosso Quiz de Moda! 👗",
@@ -128,7 +147,8 @@
                 "value": 4
               }
             ],
-            "question": "1. Qual é o seu look ideal para um dia casual?"
+            "question": "1. Qual é o seu look ideal para um dia casual?",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/b278fdf4-5fa1-468a-9e78-41775fc0f08c"
           },
           {
             "options": [
@@ -149,7 +169,8 @@
                 "value": 4
               }
             ],
-            "question": "2. Qual é o seu acessório indispensável?"
+            "question": "2. Qual é o seu acessório indispensável?",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/d70f90aa-db05-4d03-be99-1960e955d104"
           },
           {
             "options": [
@@ -170,7 +191,8 @@
                 "value": 4
               }
             ],
-            "question": "3. Qual dessas cores você mais gosta de usar?"
+            "question": "3. Qual dessas cores você mais gosta de usar?",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/580befff-e2a8-4e97-b232-be5914c9d15e"
           },
           {
             "options": [
@@ -191,7 +213,8 @@
                 "value": 4
               }
             ],
-            "question": "4. Como você descreveria seu estilo de sapato favorito?"
+            "question": "4. Como você descreveria seu estilo de sapato favorito?",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/1940f44a-be79-435e-a4fb-ffd73f876145"
           }
         ],
         "description": "<p>🎉 Transforme Seu Guarda-Roupa com Este Quiz Divertido e Revelador! 🎉</p><p>Você já se perguntou qual é o estilo de moda que mais combina com sua personalidade? Quer saber quais peças são essenciais para destacar sua verdadeira essência? Então, prepare-se para um quiz que vai revolucionar seu guarda-roupa!</p>",
@@ -212,29 +235,11 @@
           },
           "title": "🎉 Parabéns! Descobrimos Seu Estilo de Moda! 🎉",
           "ctsPrev": "Voltar"
-        }
+        },
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/a7a30c89-5bbb-47cb-9ed2-cfe829e56928"
       },
       "data": {
         "index": 0
-      }
-    },
-    {
-      "__resolveType": "site/sections/Product/ProductShelf.tsx",
-      "title": "Featured Products",
-      "cta": "/mono",
-      "products": {
-        "__resolveType": "shopify/loaders/ProductList.ts",
-        "props": {
-          "sort": "",
-          "count": 12,
-          "query": "a"
-        },
-        "filters": {
-          "tags": [],
-          "productTypes": [],
-          "productVendors": [],
-          "variantOptions": []
-        }
       }
     },
     {
