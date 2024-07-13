@@ -44,6 +44,41 @@
       "preload": true
     },
     {
+      "__resolveType": "site/sections/Mosaics/Mosaic.tsx",
+      "banners": [
+        {
+          "position": 4,
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/bfbbce31-0d19-4f11-b7cd-b8a08c8f3956",
+          "alt": "#",
+          "link": "#",
+          "title": "Fogarel"
+        },
+        {
+          "position": 2,
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/c93134f2-c7a2-45b3-8a2f-6811adb28913",
+          "alt": "#",
+          "link": "#",
+          "title": "Fogarel"
+        },
+        {
+          "position": 1,
+          "alt": "#",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/97274c7b-d015-48bf-84c6-2c95741edbb1",
+          "link": "#",
+          "title": "Montanhosa"
+        },
+        {
+          "position": 1,
+          "alt": "#",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/97274c7b-d015-48bf-84c6-2c95741edbb1",
+          "link": "#",
+          "title": "Montanhosa"
+        }
+      ],
+      "identifierImage": false,
+      "newGrid": "'banner1 banner1 banner3'\r\n'banner4 banner2 banner2'"
+    },
+    {
       "__resolveType": "site/sections/Images/CarrouselBrand.tsx",
       "imgs": [
         {
