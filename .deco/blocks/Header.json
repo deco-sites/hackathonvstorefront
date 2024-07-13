@@ -1,170 +1,784 @@
 {
   "__resolveType": "site/sections/Header/Header.tsx",
-  "navItems": {
-    "__resolveType": "commerce/loaders/navbar.ts",
-    "items": [
-      {
-        "@type": "SiteNavigationElement",
-        "url": "/women",
-        "name": "Women",
-        "children": [
-          {
-            "image": [],
-            "children": [
-              {
-                "image": [],
-                "children": [],
-                "name": "SubCategory",
-                "url": "#"
-              },
-              {
-                "image": [],
-                "children": [],
-                "name": "SubCategory",
-                "url": "#"
-              },
-              {
-                "image": [],
-                "children": [],
-                "name": "SubCategory",
-                "url": "#"
-              },
-              {
-                "image": [],
-                "children": [],
-                "name": "SubCategory",
-                "url": "#"
-              },
-              {
-                "image": [],
-                "children": [],
-                "name": "SubCategory",
-                "url": "#"
-              },
-              {
-                "image": [],
-                "children": [],
-                "name": "SubCategory",
-                "url": "#"
-              }
-            ],
-            "name": "Category",
-            "url": "#"
-          },
-          {
-            "image": [],
-            "children": [
-              {
-                "image": [],
-                "children": [],
-                "name": "SubCategory",
-                "url": "#"
-              },
-              {
-                "image": [],
-                "children": [],
-                "name": "SubCategory",
-                "url": "#"
-              },
-              {
-                "image": [],
-                "children": [],
-                "name": "SubCategory",
-                "url": "#"
-              },
-              {
-                "image": [],
-                "children": [],
-                "name": "SubCategory",
-                "url": "#"
-              },
-              {
-                "image": [],
-                "children": [],
-                "name": "SubCategory",
-                "url": "#"
-              },
-              {
-                "image": [],
-                "children": [],
-                "name": "SubCategory",
-                "url": "#"
-              }
-            ],
-            "name": "Category",
-            "url": "#"
-          },
-          {
-            "image": [],
-            "children": [
-              {
-                "image": [],
-                "children": [],
-                "name": "SubCategory",
-                "url": "#"
-              },
-              {
-                "image": [],
-                "children": [],
-                "name": "SubCategory",
-                "url": "#"
-              },
-              {
-                "image": [],
-                "children": [],
-                "name": "SubCategory",
-                "url": "#"
-              },
-              {
-                "image": [],
-                "children": [],
-                "name": "SubCategory",
-                "url": "#"
-              },
-              {
-                "image": [],
-                "children": [],
-                "name": "SubCategory",
-                "url": "#"
-              },
-              {
-                "image": [],
-                "children": [],
-                "name": "SubCategory",
-                "url": "#"
-              }
-            ],
-            "name": "Category",
-            "url": "#"
-          }
-        ]
-      },
-      {
-        "@type": "SiteNavigationElement",
-        "url": "/men",
-        "name": "Men",
-        "children": []
-      },
-      {
-        "@type": "SiteNavigationElement",
-        "url": "/kids",
-        "name": "Kids",
-        "children": []
-      },
-      {
-        "children": [],
-        "image": [],
-        "name": "Accessories",
-        "url": "/accessories"
-      },
-      {
-        "children": [],
-        "image": [],
-        "name": "Home & Living",
-        "url": "/home-and-living"
-      }
-    ]
-  },
+  "navItems": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            }
+          ],
+          "name": "Category",
+          "url": "/category",
+          "bold": false
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            }
+          ],
+          "name": "Category",
+          "url": "/category",
+          "bold": false
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            }
+          ],
+          "name": "Category",
+          "url": "/category",
+          "bold": false
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            }
+          ],
+          "name": "Category",
+          "url": "/category",
+          "bold": false
+        }
+      ],
+      "name": "Women",
+      "url": "/women",
+      "bold": false
+    },
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            }
+          ],
+          "name": "Category",
+          "url": "/category",
+          "bold": false
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            }
+          ],
+          "name": "Category",
+          "url": "/category",
+          "bold": false
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            }
+          ],
+          "name": "Category",
+          "url": "/category",
+          "bold": false
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            }
+          ],
+          "name": "Category",
+          "url": "/category",
+          "bold": false
+        }
+      ],
+      "name": "Women",
+      "url": "/women",
+      "bold": false
+    },
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            }
+          ],
+          "name": "Category",
+          "url": "/category",
+          "bold": false
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            }
+          ],
+          "name": "Category",
+          "url": "/category",
+          "bold": false
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            }
+          ],
+          "name": "Category",
+          "url": "/category",
+          "bold": false
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            }
+          ],
+          "name": "Category",
+          "url": "/category",
+          "bold": false
+        }
+      ],
+      "name": "Women",
+      "url": "/women",
+      "bold": false
+    },
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            }
+          ],
+          "name": "Category",
+          "url": "/category",
+          "bold": false
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            }
+          ],
+          "name": "Category",
+          "url": "/category",
+          "bold": false
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            }
+          ],
+          "name": "Category",
+          "url": "/category",
+          "bold": false
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            }
+          ],
+          "name": "Category",
+          "url": "/category",
+          "bold": false
+        }
+      ],
+      "name": "Women",
+      "url": "/women",
+      "bold": false
+    },
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            }
+          ],
+          "name": "Category",
+          "url": "/category",
+          "bold": false,
+          "color": "#000000"
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            }
+          ],
+          "name": "Category",
+          "url": "/category",
+          "bold": false
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            }
+          ],
+          "name": "Category",
+          "url": "/category",
+          "bold": false
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            },
+            {
+              "children": [],
+              "name": "subCategory",
+              "url": "/subCategory"
+            }
+          ],
+          "name": "Category",
+          "url": "/category",
+          "bold": false
+        }
+      ],
+      "name": "Women",
+      "url": "/women",
+      "bold": true,
+      "color": "#fa0000"
+    }
+  ],
   "searchbar": {
     "placeholder": "What are you looking for?",
     "loader": {
