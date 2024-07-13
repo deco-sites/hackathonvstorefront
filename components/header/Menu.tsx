@@ -9,12 +9,12 @@ function MenuItem({ item }: { item: SiteNavigationElement }) {
   return (
     <div class="collapse collapse-plus">
       <input type="checkbox" />
-      <div class="collapse-title">{item.name}</div>
+      <div class="collapse-title">{item}</div>
       <div class="collapse-content">
         <ul>
           <li>
             <a
-              class={`underline text-sm ${item.bold ? "font-bold" : ""}}`}
+              class={`underline text-sm ${item.bold ? "font-bold" : " "}`}
               style={item.color && `color:${item.color}`}
               href={item.url}
             >
