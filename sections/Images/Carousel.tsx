@@ -5,6 +5,7 @@ import Slider from "../../components/ui/Slider.tsx";
 import { clx } from "../../sdk/clx.ts";
 import { useId } from "../../sdk/useId.ts";
 import { useSendEvent } from "../../sdk/useSendEvent.ts";
+import { useSection } from "deco/hooks/useSection.ts";
 
 /**
  * @titleBy alt
@@ -44,6 +45,8 @@ export interface Props {
    * @description time (in seconds) to start the carousel autoplay
    */
   interval?: number;
+  index: number;
+  classSlider: string;
 }
 
 function BannerItem(
@@ -72,18 +75,18 @@ function BannerItem(
       {...selectPromotionEvent}
       href={action?.href ?? "#"}
       aria-label={action?.label}
-      class="relative block overflow-y-hidden w-full"
+      class="relative block overflow-y-hidden w-full lg:max-h-[75vh] max-h-[85vh] h-full"
     >
       {action && (
         <div
           class={clx(
             "absolute h-full w-full top-0 left-0",
-            "flex flex-col justify-center items-center",
+            "flex flex-col justify-end lg:pb-28 pb-32 items-center",
             "px-5 sm:px-0",
-            "sm:left-40 sm:items-start sm:max-w-96",
+            "sm:left-40 sm:items-start sm:max-w-96 px-2 lg:p-0",
           )}
         >
-          <span class="text-7xl font-bold text-base-100">
+          <span class="text-2xl lg:text-7xl font-bold text-base-100">
             {action.title}
           </span>
           <span class="font-normal text-base text-base-100 pt-4 pb-12">
@@ -97,24 +100,24 @@ function BannerItem(
           </button>
         </div>
       )}
-      <Picture preload={lcp} {...viewPromotionEvent}>
+      <Picture preload={true} {...viewPromotionEvent}>
         <Source
           media="(max-width: 767px)"
-          fetchPriority={lcp ? "high" : "auto"}
+          fetchPriority={"high"}
           src={mobile}
           width={412}
           height={660}
         />
         <Source
           media="(min-width: 768px)"
-          fetchPriority={lcp ? "high" : "auto"}
+          fetchPriority={"high"}
           src={desktop}
           width={1440}
           height={600}
         />
         <img
-          class="object-cover w-full h-full"
-          loading={lcp ? "eager" : "lazy"}
+          class="object-cover w-full h-full lg:max-h-[75vh]"
+          loading={"eager"}
           src={desktop}
           alt={alt}
         />
@@ -123,8 +126,10 @@ function BannerItem(
   );
 }
 
-function Carousel({ images = [], preload, interval }: Props) {
+function Carousel({ images = [], preload, interval, index = 0, classSlider }: Props) {
   const id = useId();
+
+  const lengthImage = (images.length - 1)
 
   return (
     <div
@@ -132,37 +137,41 @@ function Carousel({ images = [], preload, interval }: Props) {
       class={clx(
         "grid",
         "grid-rows-[1fr_32px_1fr_64px]",
-        "grid-cols-[32px_1fr_32px] min-h-[660px]",
+        "grid-cols-[32px_1fr_32px] min-h-[85vh]",
         "sm:grid-cols-[112px_1fr_112px] sm:min-h-min",
-        "w-screen",
+        "w-screen " + classSlider,
       )}
+      hx-get={useSection({ props: { index: index >= lengthImage ? 0 : index + 1, classSlider: "slide-prev" } })}
+      hx-target="closest section"
+      hx-swap="outerHTML transition:true"
+      hx-trigger={`load once delay:${interval || 4}s`}
     >
       <div class="col-span-full row-span-full">
-        <Slider class="carousel carousel-center w-full gap-6 h-screen">
-          {images.map((image, index) => (
-            <Slider.Item index={index} class="carousel-item w-full">
-              <BannerItem image={image} lcp={index === 0 && preload} />
-            </Slider.Item>
-          ))}
-        </Slider>
+        <BannerItem image={images[index]} lcp={preload} />
       </div>
 
-      <div class="hidden sm:flex items-center justify-center z-10 col-start-1 row-start-2">
-        <Slider.PrevButton
+      <div class="flex items-center justify-center z-10 col-start-1 row-start-2">
+        <button
           class="btn btn-neutral btn-outline btn-circle no-animation btn-sm"
-          disabled={false}
+          disabled={0 == index}
+          hx-get={useSection({ props: { index: index - 1, classSlider: "slide-prev" } })}
+          hx-target="closest section"
+          hx-swap="outerHTML transition:true"
         >
           <Icon id="chevron-right" class="rotate-180" />
-        </Slider.PrevButton>
+        </button>
       </div>
 
-      <div class="hidden sm:flex items-center justify-center z-10 col-start-3 row-start-2">
-        <Slider.NextButton
+      <div class="flex items-center justify-center z-10 col-start-3 row-start-2">
+        <button
           class="btn btn-neutral btn-outline btn-circle no-animation btn-sm"
-          disabled={false}
+          disabled={lengthImage == index}
+          hx-get={useSection({ props: { index: index + 1, classSlider: "slide-next" } })}
+          hx-target="closest section"
+          hx-swap="outerHTML transition:true"
         >
           <Icon id="chevron-right" />
-        </Slider.NextButton>
+        </button>
       </div>
 
       <ul
@@ -171,22 +180,21 @@ function Carousel({ images = [], preload, interval }: Props) {
           "carousel justify-center gap-3",
         )}
       >
-        {images.map((_, index) => (
+        {images.map((_, indexD) => (
           <li class="carousel-item">
-            <Slider.Dot
-              index={index}
+            <button
+              disabled={indexD == index}
               class={clx(
                 "bg-black opacity-20 h-3 w-3 no-animation rounded-full",
                 "disabled:w-8 disabled:bg-base-100 disabled:opacity-100 transition-[width]",
               )}
             >
-            </Slider.Dot>
+            </button>
           </li>
         ))}
       </ul>
 
-      <Slider.JS rootId={id} interval={interval && interval * 1e3} infinite />
-    </div>
+    </div >
   );
 }
 
