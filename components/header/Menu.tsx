@@ -1,5 +1,5 @@
 import Icon from "../../components/ui/Icon.tsx";
-import type { SiteNavigationElement } from "apps/commerce/types.ts";
+import { SiteNavigationElement } from "../../sections/Header/Header.tsx";
 
 export interface Props {
   navItems: SiteNavigationElement[];
@@ -13,7 +13,13 @@ function MenuItem({ item }: { item: SiteNavigationElement }) {
       <div class="collapse-content">
         <ul>
           <li>
-            <a class="underline text-sm" href={item.url}>Ver todos</a>
+            <a
+              class={`underline text-sm ${item.bold ? "font-bold" : ""}}`}
+              style={item.color && `color:${item.color}`}
+              href={item.url}
+            >
+              Ver todos
+            </a>
           </li>
           {item.children?.map((node) => (
             <li>

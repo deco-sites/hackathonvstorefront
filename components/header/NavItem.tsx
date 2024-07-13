@@ -1,13 +1,11 @@
-import type { SiteNavigationElement } from "apps/commerce/types.ts";
-import Image from "apps/website/components/Image.tsx";
 import {
   HEADER_HEIGHT_DESKTOP,
   NAVBAR_HEIGHT_DESKTOP,
 } from "../../constants.ts";
+import { SiteNavigationElement } from "../../sections/Header/Header.tsx";
 
 function NavItem({ item }: { item: SiteNavigationElement }) {
   const { url, name, children } = item;
-  const image = item?.image?.[0];
 
   return (
     <li
@@ -31,27 +29,29 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
               marginTop: HEADER_HEIGHT_DESKTOP,
             }}
           >
-            {image?.url && (
-              <Image
-                class="p-6"
-                src={image.url}
-                alt={image.alternateName}
-                width={300}
-                height={332}
-                loading="lazy"
-              />
-            )}
             <ul class="flex items-start justify-start gap-6 container">
               {children.map((node) => (
                 <li class="p-6 pl-0">
-                  <a class="hover:underline" href={node.url}>
+                  <a
+                    class={`hover:underline text-sm ${
+                      item.bold ? "font-bold" : ""
+                    }}`}
+                    style={item.color && `color:${item.color}`}
+                    href={node.url}
+                  >
                     <span>{node.name}</span>
                   </a>
 
                   <ul class="flex flex-col gap-1 mt-4">
                     {node.children?.map((leaf) => (
                       <li>
-                        <a class="hover:underline" href={leaf.url}>
+                        <a
+                          class={`hover:underline text-sm ${
+                            node.bold ? "font-bold" : ""
+                          }}`}
+                          style={node.color && `color:${node.color}`}
+                          href={leaf.url}
+                        >
                           <span class="text-xs">{leaf.name}</span>
                         </a>
                       </li>
