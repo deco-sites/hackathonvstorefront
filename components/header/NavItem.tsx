@@ -13,7 +13,7 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
         href={url}
         class={` group-hover:underline text-sm font-medium ${
           item.bold ? "font-bold" : " "
-        }`}
+        } group-hover:after:content-[''] after:hover:hidden group-hover:after:bg-[#00000085] group-hover:after:absolute group-hover:after:top-full group-hover:after:-z-10 group-hover:after:left-0 group-hover:after:right-0 group-hover:after:w-full group-hover:after:h-screen`}
         style={item.color && `color:${item.color}`}
       >
         {name}
@@ -21,7 +21,8 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
 
       {children && children.length > 0 &&
         (
-          <div class=" hidden hover:flex group-hover:flex bg-base-100 z-40 items-start justify-center gap-6 border-t-2 border-b-2 border-base-200 w-screen absolute top-full left-0 right-0">
+          <div class=" hidden hover:flex group-hover:flex  bg-base-100 z-40 items-start justify-center gap-6 border-t-2 border-b-2 border-base-200 w-screen absolute top-full left-0 right-0
+          ">
             <ul class="flex items-start justify-start gap-12 container">
               {children.map((node) => (
                 <li class="p-6 pl-0">
