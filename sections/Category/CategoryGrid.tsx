@@ -21,7 +21,7 @@ export interface Props extends SectionHeaderProps {
 function Card({ image, href, label }: Item) {
   return (
     <a href={href} class="flex flex-col items-center justify-center gap-4">
-      <div class="w-44 h-44 rounded-full bg-base-200 flex justify-center items-center border border-transparent hover:border-primary">
+      <div class="w-44 h-44 rounded-full bg-base-200 flex justify-center items-center border border-transparent hover:border-primary transition-all duration-100">
         <Image
           src={image}
           alt={label}
@@ -42,28 +42,28 @@ function CategoryGrid({ title, cta, items }: Props) {
     <Section.Container>
       <Section.Header title={title} cta={cta} />
 
-      {device === "desktop"
-        ? (
-          <div class="grid grid-cols-6 gap-10">
-            {items.map((i) => <Card {...i} />)}
-          </div>
-        )
-        : (
-          <Slider class="carousel carousel-center sm:carousel-end gap-5 w-full">
-            {items.map((i, index) => (
-              <Slider.Item
-                index={index}
-                class={clx(
-                  "carousel-item",
-                  "first:pl-5 first:sm:pl-0",
-                  "last:pr-5 last:sm:pr-0",
-                )}
-              >
-                <Card {...i} />
-              </Slider.Item>
-            ))}
-          </Slider>
-        )}
+      {device === "desktop" ? (
+        <div class="grid grid-cols-6 gap-10">
+          {items.map((i) => (
+            <Card {...i} />
+          ))}
+        </div>
+      ) : (
+        <Slider class="carousel carousel-center sm:carousel-end gap-5 w-full">
+          {items.map((i, index) => (
+            <Slider.Item
+              index={index}
+              class={clx(
+                "carousel-item",
+                "first:pl-5 first:sm:pl-0",
+                "last:pr-5 last:sm:pr-0"
+              )}
+            >
+              <Card {...i} />
+            </Slider.Item>
+          ))}
+        </Slider>
+      )}
     </Section.Container>
   );
 }
