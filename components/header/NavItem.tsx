@@ -14,7 +14,10 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
     >
       <a
         href={url}
-        class="group-hover:underline text-sm font-medium"
+        class={` group-hover:underline text-sm font-medium ${
+          item.bold ? "font-bold" : " "
+        }`}
+        style={item.color && `color:${item.color}`}
       >
         {name}
       </a>
@@ -34,9 +37,9 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
                 <li class="p-6 pl-0">
                   <a
                     class={`hover:underline text-sm ${
-                      item.bold ? "font-bold" : ""
-                    }}`}
-                    style={item.color && `color:${item.color}`}
+                      node.bold ? "font-bold" : ""
+                    }`}
+                    style={node.color && `color:${node.color}`}
                     href={node.url}
                   >
                     <span>{node.name}</span>
@@ -47,9 +50,9 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
                       <li>
                         <a
                           class={`hover:underline text-sm ${
-                            node.bold ? "font-bold" : ""
+                            leaf.bold ? "font-bold" : ""
                           }}`}
-                          style={node.color && `color:${node.color}`}
+                          style={leaf.color && `color:${leaf.color}`}
                           href={leaf.url}
                         >
                           <span class="text-xs">{leaf.name}</span>
