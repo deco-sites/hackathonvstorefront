@@ -6,6 +6,8 @@ import Image from "apps/website/components/Image.tsx";
  */
 interface Banner {
   image: ImageWidget;
+  width?: number;
+  height?: number;
   title: string;
   alt: string;
   link: string;
@@ -78,8 +80,8 @@ const Mosaic = ({
             class="w-full h-full object-cover"
             src={banner.image}
             alt={banner.alt}
-            width={400}
-            height={400}
+            width={banner.width || 400}
+            height={banner.height || 400}
             title={banner.title}
             loading="lazy"
           />
