@@ -307,7 +307,7 @@
           "bold": false
         }
       ],
-      "name": "Women",
+      "name": "Acessories",
       "url": "/women",
       "bold": false
     },
@@ -462,7 +462,7 @@
           "bold": false
         }
       ],
-      "name": "Women",
+      "name": "Men",
       "url": "/women",
       "bold": false
     },
@@ -617,9 +617,9 @@
           "bold": false
         }
       ],
-      "name": "Women",
       "url": "/women",
-      "bold": false
+      "bold": false,
+      "name": "Kids"
     },
     {
       "children": [
@@ -773,10 +773,10 @@
           "bold": false
         }
       ],
-      "name": "Women",
       "url": "/women",
       "bold": true,
-      "color": "#fa0000"
+      "color": "#fa0000",
+      "name": "OUTLET"
     }
   ],
   "searchbar": {
