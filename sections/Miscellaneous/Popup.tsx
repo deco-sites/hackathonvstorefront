@@ -107,7 +107,7 @@ const Popup = ({ layout, behavior, isOpen, firstRender = false }: Props) => {
                 src={layout?.image}
                 alt={layout?.alt}
                 width={200}
-                height={200}
+                height={250}
               />
             )}
           </div>

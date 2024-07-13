@@ -51,8 +51,8 @@ export default function Quiz({ props, data }: { props: Props; data: Data }) {
   return (
     <div class="flex w-full h-full py-10 justify-center items-center container relative min-h-96">
       {index == 0 ? (
-        <div class="flex h-full max-h-[400px]  m-auto flex-row justify-center items-center gap-5 px-2 lg:px-0">
-          <div class="w-2/4 p-5 flex flex-col justify-center items-center gap-5">
+        <div class="flex h-full lg:max-h-[400px] m-auto flex-col-reverse lg:flex-row justify-center items-center gap-5 px-2 lg:px-0">
+          <div class="w-full lg:w-2/4 p-5 flex flex-col justify-center items-center gap-5">
             <h1 class="text-xl lg:text-3xl text-center ">{title}</h1>
             {description && (
               <span
@@ -73,7 +73,7 @@ export default function Quiz({ props, data }: { props: Props; data: Data }) {
 
           {image && (
             <Image
-              class="w-2/4 max-h-[400px] object-contain h-full flex justify-center items-center"
+              class="w-[80%] lg:w-2/4 max-h-[400px] object-contain h-full flex justify-center items-center"
               src={image}
               alt={alt}
               width={250}
@@ -83,8 +83,8 @@ export default function Quiz({ props, data }: { props: Props; data: Data }) {
           )}
         </div>
       ) : steps[index - 1] ? (
-        <div class="flex w-full h-full max-h-[400px] justify-center items-center gap-5 px-2 lg:px-0 ">
-          <div class="w-full max-w-[50%] p-5">
+        <div class="flex w-full h-ful flex-col-reverse lg:flex-row lg:max-h-[400px] justify-center items-center gap-5 px-2 lg:px-0 ">
+          <div class="w-full lg:max-w-[50%] p-5">
             <h1 class=" text-xl lg:text-3xl mb-4">
               {steps[index - 1].question}
             </h1>
@@ -103,7 +103,7 @@ export default function Quiz({ props, data }: { props: Props; data: Data }) {
             </ul>
           </div>
           {steps[index - 1].image && (
-            <div class="w-[40%]">
+            <div class="w-[80%] lg:w-[40%]">
               <Image
                 class="object-contain w-full max-h-[400px] h-full justify-center items-center"
                 src={steps[index - 1].image}

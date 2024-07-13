@@ -92,54 +92,36 @@
       "banners": [
         {
           "position": 4,
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/bfbbce31-0d19-4f11-b7cd-b8a08c8f3956",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/eae8f416-8fc1-45cc-9d7b-582931cef4c4",
           "alt": "#",
           "link": "#",
-          "title": "Fogarel"
+          "title": "Kit elementos"
         },
         {
           "position": 2,
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/c93134f2-c7a2-45b3-8a2f-6811adb28913",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/e01c6a38-ca6e-4165-b907-c86e29e43d6d",
           "alt": "#",
           "link": "#",
-          "title": "Fogarel"
+          "title": "Sapato"
         },
         {
           "position": 1,
           "alt": "#",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/97274c7b-d015-48bf-84c6-2c95741edbb1",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/7a6721ab-9516-416f-b930-c9fdbf3e7ba2",
           "link": "#",
-          "title": "Montanhosa"
+          "title": "Calça"
         },
         {
           "position": 1,
           "alt": "#",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/97274c7b-d015-48bf-84c6-2c95741edbb1",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/8d1b97e5-2704-4877-9a72-fbbd2e276bf9",
           "link": "#",
-          "title": "Montanhosa"
+          "title": "Kit cinto, relogio e camisa"
         }
       ],
       "identifierImage": false,
-      "newGrid": "'banner1 banner1 banner3'\r\n'banner4 banner2 banner2'"
-    },
-    {
-      "__resolveType": "site/sections/Product/ProductShelf.tsx",
-      "title": "Featured Products",
-      "cta": "/mono",
-      "products": {
-        "__resolveType": "shopify/loaders/ProductList.ts",
-        "props": {
-          "sort": "",
-          "count": 12,
-          "query": "a"
-        },
-        "filters": {
-          "tags": [],
-          "productTypes": [],
-          "productVendors": [],
-          "variantOptions": []
-        }
-      }
+      "newGrid": "<p>'banner1 banner1 banner3' 'banner4 banner2 banner2'</p>",
+      "typeMosaic": "One"
     },
     {
       "__resolveType": "site/sections/Quiz/Quiz.tsx",
@@ -167,7 +149,7 @@
               }
             ],
             "question": "1. Qual é o seu look ideal para um dia casual?",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/0dd00975-a2e0-4365-9c88-26d9b275fa3b"
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/b278fdf4-5fa1-468a-9e78-41775fc0f08c"
           },
           {
             "options": [
@@ -189,7 +171,7 @@
               }
             ],
             "question": "2. Qual é o seu acessório indispensável?",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/d643846b-4c04-4415-8759-79fdba8b5a0c"
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/d70f90aa-db05-4d03-be99-1960e955d104"
           },
           {
             "options": [
@@ -210,7 +192,8 @@
                 "value": 4
               }
             ],
-            "question": "3. Qual dessas cores você mais gosta de usar?"
+            "question": "3. Qual dessas cores você mais gosta de usar?",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/580befff-e2a8-4e97-b232-be5914c9d15e"
           },
           {
             "options": [
@@ -231,7 +214,8 @@
                 "value": 4
               }
             ],
-            "question": "4. Como você descreveria seu estilo de sapato favorito?"
+            "question": "4. Como você descreveria seu estilo de sapato favorito?",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/1940f44a-be79-435e-a4fb-ffd73f876145"
           }
         ],
         "description": "<p>🎉 Transforme Seu Guarda-Roupa com Este Quiz Divertido e Revelador! 🎉</p><p>Você já se perguntou qual é o estilo de moda que mais combina com sua personalidade? Quer saber quais peças são essenciais para destacar sua verdadeira essência? Então, prepare-se para um quiz que vai revolucionar seu guarda-roupa!</p>",
