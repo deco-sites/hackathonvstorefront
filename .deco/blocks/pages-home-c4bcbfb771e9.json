@@ -44,6 +44,31 @@
       "preload": true
     },
     {
+      "__resolveType": "site/sections/Images/CarrouselBrand.tsx",
+      "imgs": [
+        {
+          "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/b5ea5fb1-c6fd-4514-8fa2-5c954e4346e3",
+          "alt": "deco"
+        },
+        {
+          "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/b5ea5fb1-c6fd-4514-8fa2-5c954e4346e3",
+          "alt": "deco"
+        },
+        {
+          "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/b5ea5fb1-c6fd-4514-8fa2-5c954e4346e3",
+          "alt": "deco"
+        },
+        {
+          "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/b5ea5fb1-c6fd-4514-8fa2-5c954e4346e3",
+          "alt": "deco"
+        },
+        {
+          "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/b5ea5fb1-c6fd-4514-8fa2-5c954e4346e3",
+          "alt": "deco"
+        }
+      ]
+    },
+    {
       "__resolveType": "site/sections/Miscellaneous/Popup.tsx",
       "title": "Promoção imperdivel",
       "content": "Lorem ipsum",
