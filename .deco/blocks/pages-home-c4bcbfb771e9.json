@@ -44,35 +44,39 @@
       "preload": true
     },
     {
-      "__resolveType": "site/sections/Miscellaneous/Popup.tsx",
-      "title": "Promoção imperdivel",
-      "content": "Lorem ipsum",
-      "description": "Lorem ipsum sit a met",
-      "delay": 5,
-      "format": "Local storage",
-      "placeholder": "E-mail",
-      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/9df3680b-945a-41d9-b427-ea24948d48fc",
-      "alt": "Modelo vestindo camisa branca e calça preta",
-      "clientExit": true,
-      "timing": true,
-      "userLocalStorage": true,
-      "userSession": true,
-      "isOpen": true,
-      "firstRender": true,
-      "behavior": {
-        "userSession": true,
-        "timing": true,
-        "clientExit": true,
-        "userLocalStorage": true,
-        "delay": 7
-      },
-      "layout": {
-        "title": "20% OFF",
-        "description": "Resgate agora seu cupom",
-        "placeholder": "E-mail",
-        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/517ab4c1-a5d0-4b9d-bf5f-b9bf7b00690c",
-        "alt": "Modelo usando camisa branca e calça preta"
-      }
+      "__resolveType": "site/sections/Mosaics/Mosaic.tsx",
+      "banners": [
+        {
+          "position": 4,
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/bfbbce31-0d19-4f11-b7cd-b8a08c8f3956",
+          "alt": "#",
+          "link": "#",
+          "title": "Fogarel"
+        },
+        {
+          "position": 2,
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/c93134f2-c7a2-45b3-8a2f-6811adb28913",
+          "alt": "#",
+          "link": "#",
+          "title": "Fogarel"
+        },
+        {
+          "position": 1,
+          "alt": "#",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/97274c7b-d015-48bf-84c6-2c95741edbb1",
+          "link": "#",
+          "title": "Montanhosa"
+        },
+        {
+          "position": 1,
+          "alt": "#",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/97274c7b-d015-48bf-84c6-2c95741edbb1",
+          "link": "#",
+          "title": "Montanhosa"
+        }
+      ],
+      "identifierImage": false,
+      "newGrid": "'banner1 banner1 banner3'\r\n'banner4 banner2 banner2'"
     },
     {
       "__resolveType": "site/sections/Product/ProductShelf.tsx",
