@@ -53,7 +53,7 @@ const Popup = ({ layout, behavior, isOpen, firstRender = false }: Props) => {
       <div className={`w-full h-full fixed top-0 left-0 z-50 bg-[#00000050]`}>
         <div className={"w-full h-full flex justify-center items-center px-4"}>
           <div
-            className={`bg-[#FFF] flex flex-row justify-between w-full lg:max-w-[700px] 2xl:max-w-[850px] box-content items-center rounded-lg relative p-6 lg:p-0`}
+            className={`bg-[#FFF] flex flex-row justify-between w-full max-h-[500px] lg:max-w-[700px] 2xl:max-w-[850px] box-content items-center rounded-lg relative p-6 lg:p-0`}
           >
             <button
               hx-get={useSection({
@@ -103,11 +103,11 @@ const Popup = ({ layout, behavior, isOpen, firstRender = false }: Props) => {
 
             {layout?.image && (
               <Image
-                class="hidden lg:block w-[45%]"
+                class="hidden lg:block h-full w-[45%] rounded-r-[8px]"
                 src={layout?.image}
                 alt={layout?.alt}
                 width={200}
-                height={400}
+                height={200}
               />
             )}
           </div>

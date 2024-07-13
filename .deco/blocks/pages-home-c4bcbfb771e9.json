@@ -123,6 +123,25 @@
       "newGrid": "'banner1 banner1 banner3'\r\n'banner4 banner2 banner2'"
     },
     {
+      "__resolveType": "site/sections/Product/ProductShelf.tsx",
+      "title": "Featured Products",
+      "cta": "/mono",
+      "products": {
+        "__resolveType": "shopify/loaders/ProductList.ts",
+        "props": {
+          "sort": "",
+          "count": 12,
+          "query": "a"
+        },
+        "filters": {
+          "tags": [],
+          "productTypes": [],
+          "productVendors": [],
+          "variantOptions": []
+        }
+      }
+    },
+    {
       "__resolveType": "site/sections/Quiz/Quiz.tsx",
       "props": {
         "title": "👗 Descubra Seu Estilo de Roupa Perfeito com Nosso Quiz de Moda! 👗",
@@ -148,7 +167,7 @@
               }
             ],
             "question": "1. Qual é o seu look ideal para um dia casual?",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/b278fdf4-5fa1-468a-9e78-41775fc0f08c"
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/0dd00975-a2e0-4365-9c88-26d9b275fa3b"
           },
           {
             "options": [
@@ -170,7 +189,7 @@
               }
             ],
             "question": "2. Qual é o seu acessório indispensável?",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/d70f90aa-db05-4d03-be99-1960e955d104"
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/d643846b-4c04-4415-8759-79fdba8b5a0c"
           },
           {
             "options": [
@@ -191,8 +210,7 @@
                 "value": 4
               }
             ],
-            "question": "3. Qual dessas cores você mais gosta de usar?",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/580befff-e2a8-4e97-b232-be5914c9d15e"
+            "question": "3. Qual dessas cores você mais gosta de usar?"
           },
           {
             "options": [
@@ -213,8 +231,7 @@
                 "value": 4
               }
             ],
-            "question": "4. Como você descreveria seu estilo de sapato favorito?",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/1940f44a-be79-435e-a4fb-ffd73f876145"
+            "question": "4. Como você descreveria seu estilo de sapato favorito?"
           }
         ],
         "description": "<p>🎉 Transforme Seu Guarda-Roupa com Este Quiz Divertido e Revelador! 🎉</p><p>Você já se perguntou qual é o estilo de moda que mais combina com sua personalidade? Quer saber quais peças são essenciais para destacar sua verdadeira essência? Então, prepare-se para um quiz que vai revolucionar seu guarda-roupa!</p>",
@@ -363,6 +380,23 @@
     },
     {
       "__resolveType": "Footer"
+    },
+    {
+      "__resolveType": "site/sections/Miscellaneous/Popup.tsx",
+      "layout": {
+        "title": "20% OFF ",
+        "description": "Promoção imperdivel",
+        "placeholder": "E-mail",
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/2528df6c-b6d3-4c34-a6c5-101cfd8fa302",
+        "alt": "Modelo com oculos escuro usando camisa branca e calça preta"
+      },
+      "behavior": {
+        "delay": 10,
+        "timing": true,
+        "userSession": false,
+        "userLocalStorage": false,
+        "clientExit": true
+      }
     }
   ],
   "__resolveType": "website/pages/Page.tsx",
