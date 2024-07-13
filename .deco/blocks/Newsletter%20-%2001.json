@@ -1,0 +1,18 @@
+{
+  "__resolveType": "site/sections/Newsletter/Newsletter.tsx",
+  "label": "Inscrever-se",
+  "placeholder": "E-mail",
+  "empty": {
+    "title": "Obtenha as melhores ofertas, as últimas tendências e muito mais.",
+    "description": "Receba nossas novidades e promoções com antecedência. Aproveite e ganhe 10% de desconto na sua primeira compra. Para mais informações, clique aqui."
+  },
+  "success": {
+    "title": "Obrigado por se inscrever!",
+    "description": "Agora você está inscrito para receber as últimas notícias, tendências e promoções exclusivas diretamente em sua caixa de entrada. Fique atento!"
+  },
+  "failed": {
+    "title": "Ops!. Algo deu errado!",
+    "description": "Algo deu errado. Por favor, tente novamente. Se o problema persistir, entre em contato conosco."
+  },
+  "status": "success"
+}

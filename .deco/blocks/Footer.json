@@ -2,80 +2,80 @@
   "__resolveType": "site/sections/Footer/Footer.tsx",
   "links": [
     {
-      "title": "Our Company",
+      "title": "Nossa empresa",
       "children": [
         {
-          "title": "About us",
+          "title": "Sobre nós",
           "href": "#"
         },
         {
-          "title": "Our blog",
+          "title": "Nosso blog",
           "href": "#"
         },
         {
-          "title": "Stores",
+          "title": "Lojas",
           "href": "#"
         },
         {
-          "title": "Work with us",
+          "title": "Trabalhe Conosco",
           "href": "#"
         }
       ],
       "href": "#"
     },
     {
-      "title": "Orders & Purchases",
+      "title": "Pedidos e compras",
       "href": "#",
       "children": [
         {
-          "title": "Check order status",
+          "title": "Verifique o status da ordem",
           "href": "#"
         },
         {
-          "title": "Return and exchanges",
+          "title": "Devoluções e trocas",
           "href": "#"
         },
         {
-          "title": "Product retail",
+          "title": "Varejo de produtos",
           "href": "#"
         },
         {
-          "title": "Gift cards",
+          "title": "Cartões de presente",
           "href": "#"
         }
       ]
     },
     {
-      "title": "Support & Services",
+      "title": "Serviços de suporte",
       "href": "#",
       "children": [
         {
-          "title": "Support Center",
+          "title": "Centro de Apoio",
           "href": "#"
         },
         {
-          "title": "Schedule a service",
+          "title": "Agende um serviço",
           "href": "#"
         },
         {
-          "title": "Contact us",
+          "title": "Contate-nos",
           "href": "#"
         }
       ]
     },
     {
-      "title": "Support & Services",
+      "title": "Serviços de suporte",
       "children": [
         {
-          "title": "Support Center",
+          "title": "Centro de Apoio",
           "href": "#"
         },
         {
-          "title": "Schedule a service",
+          "title": "Agende um serviço",
           "href": "#"
         },
         {
-          "title": "Contact us",
+          "title": "Contate-nos",
           "href": "#"
         }
       ],
@@ -150,15 +150,15 @@
   ],
   "policies": [
     {
-      "title": "Privacy Policy",
+      "title": "Política de Privacidade",
       "href": "#"
     },
     {
-      "title": "Terms and Conditions",
+      "title": "Termos e Condições",
       "href": "#"
     },
     {
-      "title": "Cookies Policy",
+      "title": "Política de Cookies",
       "href": "#"
     }
   ],

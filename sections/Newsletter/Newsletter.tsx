@@ -102,7 +102,7 @@ function Newsletter({
 
   return (
     <Section.Container class="bg-base-200">
-      <div class="p-14 grid grid-flow-row sm:grid-cols-2 gap-10 sm:gap-20 place-items-center">
+      <div class="p-14 grid grid-flow-row sm:grid-cols-2 gap-5 sm:gap-10 place-items-center">
         <Notice {...empty} />
 
         <form

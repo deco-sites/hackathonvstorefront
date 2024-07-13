@@ -224,5 +224,13 @@
   "/.deco/blocks/Preview%20%2Fsections%2FMosaics%2FMosaic.tsx.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/Mosaics/Mosaic.tsx"
+  },
+  "/.deco/blocks/Newsletter%20-%2001.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Newsletter/Newsletter.tsx"
+  },
+  "/.deco/blocks/Quizz%20-%20PDP.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Quiz/Quiz.tsx"
   }
 }
