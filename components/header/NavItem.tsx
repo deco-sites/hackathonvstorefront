@@ -1,7 +1,4 @@
-import {
-  HEADER_HEIGHT_DESKTOP,
-  NAVBAR_HEIGHT_DESKTOP,
-} from "../../constants.ts";
+import { NAVBAR_HEIGHT_DESKTOP } from "../../constants.ts";
 import { SiteNavigationElement } from "../../sections/Header/Header.tsx";
 
 function NavItem({ item }: { item: SiteNavigationElement }) {
@@ -9,7 +6,7 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
 
   return (
     <li
-      class="group flex items-center pr-5"
+      class="group flex items-center px-5"
       style={{ height: NAVBAR_HEIGHT_DESKTOP }}
     >
       <a
@@ -24,15 +21,8 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
 
       {children && children.length > 0 &&
         (
-          <div
-            class="fixed hidden hover:flex group-hover:flex bg-base-100 z-40 items-start justify-center gap-6 border-t-2 border-b-2 border-base-200 w-screen"
-            style={{
-              top: "0px",
-              left: "0px",
-              marginTop: HEADER_HEIGHT_DESKTOP,
-            }}
-          >
-            <ul class="flex items-start justify-start gap-6 container">
+          <div class=" hidden hover:flex group-hover:flex bg-base-100 z-40 items-start justify-center gap-6 border-t-2 border-b-2 border-base-200 w-screen absolute top-full left-0 right-0">
+            <ul class="flex items-start justify-start gap-12 container">
               {children.map((node) => (
                 <li class="p-6 pl-0">
                   <a
