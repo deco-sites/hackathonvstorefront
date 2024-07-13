@@ -104,34 +104,118 @@
       ]
     },
     {
-      "__resolveType": "site/sections/Miscellaneous/Popup.tsx",
-      "title": "Promoção imperdivel",
-      "content": "Lorem ipsum",
-      "description": "Lorem ipsum sit a met",
-      "delay": 5,
-      "format": "Local storage",
-      "placeholder": "E-mail",
-      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/9df3680b-945a-41d9-b427-ea24948d48fc",
-      "alt": "Modelo vestindo camisa branca e calça preta",
-      "clientExit": true,
-      "timing": true,
-      "userLocalStorage": true,
-      "userSession": true,
-      "isOpen": true,
-      "firstRender": true,
-      "behavior": {
-        "userSession": true,
-        "timing": true,
-        "clientExit": true,
-        "userLocalStorage": true,
-        "delay": 7
+      "__resolveType": "site/sections/Quiz/Quiz.tsx",
+      "props": {
+        "title": "👗 Descubra Seu Estilo de Roupa Perfeito com Nosso Quiz de Moda! 👗",
+        "ctaStart": "começar",
+        "steps": [
+          {
+            "options": [
+              {
+                "label": "a) Camisa social branca e calça de alfaiataria",
+                "value": 1
+              },
+              {
+                "label": "b) Jeans e camiseta básica",
+                "value": 2
+              },
+              {
+                "label": "c) Vestido fluido e sandálias",
+                "value": 3
+              },
+              {
+                "label": "d) Calça de moletom e tênis",
+                "value": 4
+              }
+            ],
+            "question": "1. Qual é o seu look ideal para um dia casual?"
+          },
+          {
+            "options": [
+              {
+                "label": "a) Relógio clássico",
+                "value": 1
+              },
+              {
+                "label": "b) Boné estiloso",
+                "value": 2
+              },
+              {
+                "label": "c) Colar de pedras naturais",
+                "value": 3
+              },
+              {
+                "label": "d) Mochila prática",
+                "value": 4
+              }
+            ],
+            "question": "2. Qual é o seu acessório indispensável?"
+          },
+          {
+            "options": [
+              {
+                "label": "a) Preto",
+                "value": 1
+              },
+              {
+                "label": "b) Azul jeans",
+                "value": 2
+              },
+              {
+                "label": "c) Tons terrosos",
+                "value": 3
+              },
+              {
+                "label": "d) Cinza",
+                "value": 4
+              }
+            ],
+            "question": "3. Qual dessas cores você mais gosta de usar?"
+          },
+          {
+            "options": [
+              {
+                "label": "a) Scarpin elegante",
+                "value": 1
+              },
+              {
+                "label": "b) Tênis confortável",
+                "value": 2
+              },
+              {
+                "label": "c) Botas de couro",
+                "value": 3
+              },
+              {
+                "label": "d) Sapatilhas ou loafers",
+                "value": 4
+              }
+            ],
+            "question": "4. Como você descreveria seu estilo de sapato favorito?"
+          }
+        ],
+        "description": "<p>🎉 Transforme Seu Guarda-Roupa com Este Quiz Divertido e Revelador! 🎉</p><p>Você já se perguntou qual é o estilo de moda que mais combina com sua personalidade? Quer saber quais peças são essenciais para destacar sua verdadeira essência? Então, prepare-se para um quiz que vai revolucionar seu guarda-roupa!</p>",
+        "result": {
+          "products": {
+            "__resolveType": "shopify/loaders/ProductList.ts",
+            "props": {
+              "sort": "",
+              "query": "a",
+              "count": 4
+            },
+            "filters": {
+              "tags": [],
+              "productTypes": [],
+              "productVendors": [],
+              "variantOptions": []
+            }
+          },
+          "title": "🎉 Parabéns! Descobrimos Seu Estilo de Moda! 🎉",
+          "ctsPrev": "Voltar"
+        }
       },
-      "layout": {
-        "title": "20% OFF",
-        "description": "Resgate agora seu cupom",
-        "placeholder": "E-mail",
-        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/517ab4c1-a5d0-4b9d-bf5f-b9bf7b00690c",
-        "alt": "Modelo usando camisa branca e calça preta"
+      "data": {
+        "index": 0
       }
     },
     {
