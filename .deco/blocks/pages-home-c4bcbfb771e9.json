@@ -77,7 +77,7 @@
       ],
       "identifierImage": false,
       "newGrid": "'banner1 banner1 banner3'\r\n'banner4 banner2 banner2'"
-    }
+    },
     {
       "__resolveType": "site/sections/Images/CarrouselBrand.tsx",
       "imgs": [

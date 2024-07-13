@@ -37,9 +37,13 @@ interface Props {
 
   behavior?: Behavior;
 
-  /** @hidden */
+  /**
+   * @hide true
+   */
   isOpen?: boolean;
-  /** @hidden */
+  /**
+   * @hide true
+   */
   firstRender?: boolean;
 }
 
