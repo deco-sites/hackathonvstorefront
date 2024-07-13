@@ -77,7 +77,7 @@ const Mosaic = ({
           )}
 
           <Image
-            class="w-full h-full object-cover"
+            class="w-full h-full object-fill"
             src={banner.image}
             alt={banner.alt}
             width={banner.width || 400}

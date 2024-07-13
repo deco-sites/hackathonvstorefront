@@ -109,7 +109,7 @@ export default function Quiz({ props, data }: { props: Props; data: Data }) {
                     {steps[index - 1].image && (
                         <div class="w-[80%] lg:w-[40%]">
                             <Image
-                                class="object-contain w-full max-h-[400px] h-full justify-center items-center"
+                                class="object-cover w-full max-h-[400px] h-full justify-center items-center"
                                 src={steps[index - 1].image}
                                 alt={steps[index - 1].alt}
                                 width={steps[index - 1].width || 500}

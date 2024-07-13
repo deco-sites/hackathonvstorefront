@@ -102,21 +102,27 @@
           "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/e01c6a38-ca6e-4165-b907-c86e29e43d6d",
           "alt": "#",
           "link": "#",
-          "title": "Sapato"
+          "title": "Sapato",
+          "width": 421,
+          "height": 318
         },
         {
           "position": 1,
           "alt": "#",
           "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/7a6721ab-9516-416f-b930-c9fdbf3e7ba2",
           "link": "#",
-          "title": "Calça"
+          "title": "Calça",
+          "width": 421,
+          "height": 318
         },
         {
           "position": 1,
           "alt": "#",
           "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/8d1b97e5-2704-4877-9a72-fbbd2e276bf9",
           "link": "#",
-          "title": "Kit cinto, relogio e camisa"
+          "title": "Kit cinto, relogio e camisa",
+          "width": 850,
+          "height": 318
         }
       ],
       "identifierImage": false,
