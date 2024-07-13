@@ -1,0 +1,128 @@
+{
+  "__resolveType": "site/sections/Quiz/Quiz.tsx",
+  "props": {
+    "steps": [
+      {
+        "options": [
+          {
+            "label": "a) Camisa social branca e calça de alfaiataria",
+            "value": 1
+          },
+          {
+            "label": "b) Jeans e camiseta básica",
+            "value": 2
+          },
+          {
+            "label": "c) Vestido fluido e sandálias",
+            "value": 3
+          },
+          {
+            "label": "d) Calça de moletom e tênis",
+            "value": 4
+          }
+        ],
+        "question": "1. Qual é o seu look ideal para um dia casual?",
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/b278fdf4-5fa1-468a-9e78-41775fc0f08c",
+        "width": 512,
+        "height": 400
+      },
+      {
+        "options": [
+          {
+            "label": "a) Relógio clássico",
+            "value": 1
+          },
+          {
+            "label": "b) Boné estiloso",
+            "value": 2
+          },
+          {
+            "label": "c) Colar de pedras naturais",
+            "value": 3
+          },
+          {
+            "label": "d) Mochila prática",
+            "value": 4
+          }
+        ],
+        "question": "2. Qual é o seu acessório indispensável?",
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/d70f90aa-db05-4d03-be99-1960e955d104",
+        "width": 512,
+        "height": 400
+      },
+      {
+        "options": [
+          {
+            "label": "a) Preto",
+            "value": 1
+          },
+          {
+            "label": "b) Azul jeans",
+            "value": 2
+          },
+          {
+            "label": "c) Tons terrosos",
+            "value": 3
+          },
+          {
+            "label": "d) Cinza",
+            "value": 4
+          }
+        ],
+        "question": "3. Qual dessas cores você mais gosta de usar?",
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/580befff-e2a8-4e97-b232-be5914c9d15e",
+        "width": 512,
+        "height": 400
+      },
+      {
+        "options": [
+          {
+            "label": "a) Scarpin elegante",
+            "value": 1
+          },
+          {
+            "label": "b) Tênis confortável",
+            "value": 2
+          },
+          {
+            "label": "c) Botas de couro",
+            "value": 3
+          },
+          {
+            "label": "d) Sapatilhas ou loafers",
+            "value": 4
+          }
+        ],
+        "question": "4. Como você descreveria seu estilo de sapato favorito?",
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/1940f44a-be79-435e-a4fb-ffd73f876145",
+        "width": 512,
+        "height": 400
+      }
+    ],
+    "result": {
+      "products": {
+        "__resolveType": "shopify/loaders/ProductList.ts",
+        "props": {
+          "sort": "",
+          "query": "a",
+          "count": 4
+        },
+        "filters": {
+          "tags": [],
+          "productTypes": [],
+          "productVendors": [],
+          "variantOptions": []
+        }
+      },
+      "title": "🎉 Parabéns! Descobrimos Seu Estilo de Moda! 🎉",
+      "ctsPrev": "Voltar"
+    },
+    "title": "👗 Descubra Seu Estilo de Roupa Perfeito com Nosso Quiz de Moda! 👗",
+    "ctaStart": "começar",
+    "description": "<p>🎉 Transforme Seu Guarda-Roupa com Este Quiz Divertido e Revelador! 🎉</p><p>Você já se perguntou qual é o estilo de moda que mais combina com sua personalidade? Quer saber quais peças são essenciais para destacar sua verdadeira essência? Então, prepare-se para um quiz que vai revolucionar seu guarda-roupa!</p>",
+    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/a7a30c89-5bbb-47cb-9ed2-cfe829e56928"
+  },
+  "data": {
+    "index": 0
+  }
+}

@@ -25,7 +25,7 @@
     },
     {
       "__resolveType": "site/sections/Product/ProductShelf.tsx",
-      "title": "You may also like",
+      "title": "Você pode gostar",
       "products": {
         "__resolveType": "shopify/loaders/ProductList.ts",
         "props": {
@@ -39,10 +39,139 @@
           "productVendors": [],
           "variantOptions": []
         }
+      },
+      "cta": "/#"
+    },
+    {
+      "__resolveType": "site/sections/Quiz/Quiz.tsx",
+      "props": {
+        "steps": [
+          {
+            "options": [
+              {
+                "label": "a) Camisa social branca e calça de alfaiataria",
+                "value": 1
+              },
+              {
+                "label": "b) Jeans e camiseta básica",
+                "value": 2
+              },
+              {
+                "label": "c) Vestido fluido e sandálias",
+                "value": 3
+              },
+              {
+                "label": "d) Calça de moletom e tênis",
+                "value": 4
+              }
+            ],
+            "question": "1. Qual é o seu look ideal para um dia casual?",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/b278fdf4-5fa1-468a-9e78-41775fc0f08c",
+            "width": 512,
+            "height": 400
+          },
+          {
+            "options": [
+              {
+                "label": "a) Relógio clássico",
+                "value": 1
+              },
+              {
+                "label": "b) Boné estiloso",
+                "value": 2
+              },
+              {
+                "label": "c) Colar de pedras naturais",
+                "value": 3
+              },
+              {
+                "label": "d) Mochila prática",
+                "value": 4
+              }
+            ],
+            "question": "2. Qual é o seu acessório indispensável?",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/d70f90aa-db05-4d03-be99-1960e955d104",
+            "width": 512,
+            "height": 400
+          },
+          {
+            "options": [
+              {
+                "label": "a) Preto",
+                "value": 1
+              },
+              {
+                "label": "b) Azul jeans",
+                "value": 2
+              },
+              {
+                "label": "c) Tons terrosos",
+                "value": 3
+              },
+              {
+                "label": "d) Cinza",
+                "value": 4
+              }
+            ],
+            "question": "3. Qual dessas cores você mais gosta de usar?",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/580befff-e2a8-4e97-b232-be5914c9d15e",
+            "width": 512,
+            "height": 400
+          },
+          {
+            "options": [
+              {
+                "label": "a) Scarpin elegante",
+                "value": 1
+              },
+              {
+                "label": "b) Tênis confortável",
+                "value": 2
+              },
+              {
+                "label": "c) Botas de couro",
+                "value": 3
+              },
+              {
+                "label": "d) Sapatilhas ou loafers",
+                "value": 4
+              }
+            ],
+            "question": "4. Como você descreveria seu estilo de sapato favorito?",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/1940f44a-be79-435e-a4fb-ffd73f876145",
+            "width": 512,
+            "height": 400
+          }
+        ],
+        "result": {
+          "products": {
+            "__resolveType": "shopify/loaders/ProductList.ts",
+            "props": {
+              "sort": "",
+              "query": "a",
+              "count": 4
+            },
+            "filters": {
+              "tags": [],
+              "productTypes": [],
+              "productVendors": [],
+              "variantOptions": []
+            }
+          },
+          "title": "🎉 Parabéns! Descobrimos Seu Estilo de Moda! 🎉",
+          "ctsPrev": "Voltar"
+        },
+        "title": "Não achou o que procurava? ",
+        "ctaStart": "começar",
+        "description": "<p>Está em dúvida sobre qual estilo de moda mais reflete sua personalidade? Quer saber quais roupas são ideais para realçar seu verdadeiro eu? Participe do nosso quiz e revolucione seu visual!</p>",
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/42165848-c76d-4505-b442-1795b96d08b4"
+      },
+      "data": {
+        "index": 0
       }
     },
     {
-      "__resolveType": "site/sections/Newsletter/Newsletter.tsx"
+      "__resolveType": "Newsletter - 01"
     },
     {
       "__resolveType": "Footer"
