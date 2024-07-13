@@ -29,6 +29,8 @@ interface Layout {
   description?: string;
   placeholder?: string;
   image?: ImageWidget;
+  widht?: number;
+  height?: number;
   alt?: string;
 }
 
@@ -53,7 +55,7 @@ const Popup = ({ layout, behavior, isOpen, firstRender = false }: Props) => {
       <div className={`w-full h-full fixed top-0 left-0 z-50 bg-[#00000050]`}>
         <div className={"w-full h-full flex justify-center items-center px-4"}>
           <div
-            className={`bg-[#FFF] flex flex-row justify-between w-full max-h-[500px] lg:max-w-[700px] 2xl:max-w-[850px] box-content items-center rounded-lg relative p-6 lg:p-0`}
+            className={`bg-[#FFF] flex flex-row justify-between w-full min-h-96 max-h-[500px] lg:max-w-[700px] 2xl:max-w-[850px] box-content items-center rounded-lg relative p-6 lg:p-0 overflow-hidden`}
           >
             <button
               hx-get={useSection({
@@ -66,7 +68,7 @@ const Popup = ({ layout, behavior, isOpen, firstRender = false }: Props) => {
               <Icon id="close" />
             </button>
 
-            <div class="flex flex-col gap-4 w-full m-[20px]">
+            <div class="flex flex-col gap-4 w-[55%] m-[20px]">
               {layout?.title && (
                 <p class="text-4xl font-bold text-center ">{layout?.title}</p>
               )}
@@ -102,13 +104,17 @@ const Popup = ({ layout, behavior, isOpen, firstRender = false }: Props) => {
             </div>
 
             {layout?.image && (
-              <Image
-                class="hidden lg:block h-full w-[45%] rounded-r-[8px]"
-                src={layout?.image}
-                alt={layout?.alt}
-                width={200}
-                height={250}
-              />
+              <div class="hidden lg:block h-full w-[45%] rounded-r-[8px]" >
+                <Image
+                  class="w-full h-full"
+                  src={layout?.image}
+                  alt={layout?.alt}
+                  width={layout?.widht || 200}
+                  height={layout?.height || 250}
+                  decoding={"async"}
+                  loading={"eager"}
+                />
+              </div>
             )}
           </div>
         </div>
@@ -124,14 +130,12 @@ const Popup = ({ layout, behavior, isOpen, firstRender = false }: Props) => {
     return (
       <>
         <div
-          class="w-screen h-screen bg-transparent fixed top-0 left-0"
           id="popupSession"
           hx-get={useSection({ props: { isOpen: true } })}
           hx-target="closest section"
           hx-swap="outerHTML"
-          hx-trigger={`load ${behavior.delay && `delay:${behavior.delay}s`}, ${
-            behavior.clientExit && "mouseleave"
-          }`}
+          hx-trigger={`load ${behavior.delay && `delay:${behavior.delay}s`}, ${behavior.clientExit && "mouseleave from:body"
+            }`}
         />
 
         {behavior.userLocalStorage && (
