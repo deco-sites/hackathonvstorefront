@@ -1,5 +1,4 @@
 import type { HTMLWidget, ImageWidget } from "apps/admin/widgets.ts";
-import type { SiteNavigationElement } from "apps/commerce/types.ts";
 import Image from "apps/website/components/Image.tsx";
 import { useDevice } from "deco/hooks/useDevice.ts";
 import { useSection } from "deco/hooks/useSection.ts";
@@ -28,6 +27,40 @@ export interface Logo {
   alt: string;
   width?: number;
   height?: number;
+}
+
+/** @titleBy name */
+export interface SiteNavigationElementLeaf {
+  /** The name of the item. */
+  name?: string;
+  /** URL of the item. */
+  url?: string;
+
+  bold?: boolean;
+  /**@format color */
+  color?: string;
+}
+
+export interface SiteNavigationElement extends SiteNavigationElementLeaf {
+  // TODO: The schema generator is not handling recursive types leading to an infinite loop
+  // Lets circunvent this issue by enumerating the max allowed depth
+  children?: Array<
+    SiteNavigationElementLeaf & {
+      children?: Array<
+        SiteNavigationElementLeaf & {
+          children?: Array<
+            SiteNavigationElementLeaf & {
+              children?: Array<
+                SiteNavigationElementLeaf & {
+                  children?: SiteNavigationElementLeaf[];
+                }
+              >;
+            }
+          >;
+        }
+      >;
+    }
+  >;
 }
 
 export interface SectionProps {
@@ -96,7 +129,7 @@ const Desktop = (
         </div>
       </div>
 
-      <div class="flex justify-between items-center">
+      <div class="flex justify-center items-center border-t border-gray-400">
         <ul class="flex">
           {navItems?.slice(0, 10).map((item) => <NavItem item={item} />)}
         </ul>
