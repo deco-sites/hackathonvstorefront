@@ -7,11 +7,11 @@ interface ItemImg {
   src: ImageWidget;
 }
 
-export interface Props {
+interface Props {
   imgs: ItemImg[];
 }
 
-export function CarrouselBrand(props: Props) {
+export default function CarrouselBrand(props: Props) {
   const { imgs } = props;
 
   return (
