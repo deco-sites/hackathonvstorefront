@@ -104,7 +104,7 @@ const Popup = ({ layout, behavior, isOpen, firstRender = false }: Props) => {
             </div>
 
             {layout?.image && (
-              <div class="hidden lg:block h-full w-[45%] rounded-r-[8px]" >
+              <div class="hidden lg:block h-full w-[45%] rounded-r-[8px]">
                 <Image
                   class="w-full h-full"
                   src={layout?.image}
@@ -134,8 +134,9 @@ const Popup = ({ layout, behavior, isOpen, firstRender = false }: Props) => {
           hx-get={useSection({ props: { isOpen: true } })}
           hx-target="closest section"
           hx-swap="outerHTML"
-          hx-trigger={`load ${behavior.delay && `delay:${behavior.delay}s`}, ${behavior.clientExit && "mouseleave from:body"
-            }`}
+          hx-trigger={`load ${behavior.delay && `delay:${behavior.delay}s`}, ${
+            behavior.clientExit && "mouseleave from:body"
+          }`}
         />
 
         {behavior.userLocalStorage && (
