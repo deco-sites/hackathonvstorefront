@@ -101,7 +101,7 @@ const Desktop = (
     </Modal>
 
     <div class="flex flex-col gap-4 pt-5 container border-b border-gray-300">
-      <div class="grid grid-cols-3 place-items-center">
+      <div class="flex justify-center place-items-center">
         <div class="place-self-start">
           <a href="/" aria-label="Store logo">
             <Image
@@ -115,7 +115,7 @@ const Desktop = (
 
         <label
           for={SEARCHBAR_POPUP_ID}
-          class="input input-bordered flex items-center gap-2 w-full"
+          class="input input-bordered flex items-center gap-2 w-full max-w-96 ml-auto mr-8"
           aria-label="search icon button"
         >
           <Icon id="search" />
@@ -129,7 +129,7 @@ const Desktop = (
         </div>
       </div>
 
-      <div class="flex justify-center items-center border-t border-gray-400">
+      <div class="flex justify-center items-center border-t border-gray-300">
         <ul class="flex">
           {navItems?.slice(0, 10).map((item) => <NavItem item={item} />)}
         </ul>
