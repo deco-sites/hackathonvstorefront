@@ -126,10 +126,12 @@ function BannerItem(
   );
 }
 
-function Carousel({ images = [], preload, interval, index = 0, classSlider }: Props) {
+function Carousel(
+  { images = [], preload, interval, index = 0, classSlider }: Props,
+) {
   const id = useId();
 
-  const lengthImage = (images.length - 1)
+  const lengthImage = images.length - 1;
 
   return (
     <div
@@ -141,7 +143,12 @@ function Carousel({ images = [], preload, interval, index = 0, classSlider }: Pr
         "sm:grid-cols-[112px_1fr_112px] sm:min-h-min",
         "w-screen " + classSlider,
       )}
-      hx-get={useSection({ props: { index: index >= lengthImage ? 0 : index + 1, classSlider: "slide-prev" } })}
+      hx-get={useSection({
+        props: {
+          index: index >= lengthImage ? 0 : index + 1,
+          classSlider: "slide-prev",
+        },
+      })}
       hx-target="closest section"
       hx-swap="outerHTML transition:true"
       hx-trigger={`load once delay:${interval || 4}s`}
@@ -154,7 +161,9 @@ function Carousel({ images = [], preload, interval, index = 0, classSlider }: Pr
         <button
           class="btn btn-neutral btn-outline btn-circle no-animation btn-sm"
           disabled={0 == index}
-          hx-get={useSection({ props: { index: index - 1, classSlider: "slide-prev" } })}
+          hx-get={useSection({
+            props: { index: index - 1, classSlider: "slide-prev" },
+          })}
           hx-target="closest section"
           hx-swap="outerHTML transition:true"
         >
@@ -166,7 +175,9 @@ function Carousel({ images = [], preload, interval, index = 0, classSlider }: Pr
         <button
           class="btn btn-neutral btn-outline btn-circle no-animation btn-sm"
           disabled={lengthImage == index}
-          hx-get={useSection({ props: { index: index + 1, classSlider: "slide-next" } })}
+          hx-get={useSection({
+            props: { index: index + 1, classSlider: "slide-next" },
+          })}
           hx-target="closest section"
           hx-swap="outerHTML transition:true"
         >
@@ -193,8 +204,7 @@ function Carousel({ images = [], preload, interval, index = 0, classSlider }: Pr
           </li>
         ))}
       </ul>
-
-    </div >
+    </div>
   );
 }
 
