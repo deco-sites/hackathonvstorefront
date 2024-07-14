@@ -43,7 +43,7 @@ interface Props {
 
 interface Data {
   /**
-   *@hide true
+   * @hide true
    */
   index: number;
 }
