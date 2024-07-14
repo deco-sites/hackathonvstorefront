@@ -63,7 +63,7 @@ export default function Quiz({ props, data }: { props: Props; data: Data }) {
   const { index } = data;
 
   return (
-    <div class="flex w-full h-full py-10 justify-center items-center container relative min-h-96 bg-[#fafafa]">
+    <div class="flex w-full h-full py-10 my-5 lg:my-14 justify-center items-center container relative min-h-96 bg-[#fafafa]">
       {index == 0 ? (
         <div class="flex h-full lg:max-h-[400px] m-auto flex-col-reverse lg:flex-row justify-center items-center gap-5 px-2 lg:px-0 lg:pl-[100px] lg:pr-0 lg:gap-0">
           <div class="w-full lg:w-2/4 p-5 flex flex-col justify-center items-center gap-5">
