@@ -8,35 +8,35 @@
       "__resolveType": "site/sections/Images/Carousel.tsx",
       "images": [
         {
-          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/5b022a01-ba88-46fe-86ae-93ae644605b7",
-          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/88b2ad41-be6d-4640-b9fe-c58942362f0f",
+          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/0205ab19-a590-44e5-b5e4-91b0d48fed13",
+          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/0205ab19-a590-44e5-b5e4-91b0d48fed13",
           "alt": "Shoes",
           "action": {
-            "title": "Skate into Adventure",
-            "subTitle": "Top-quality roller skate shoes for all levels. ",
+            "title": "Elegância",
             "href": "/s?q=shoes&page=0",
-            "label": "Grab Yours Now!"
+            "label": "Ver Mais ",
+            "subTitle": "A melhor qualidade"
           }
         },
         {
-          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/d26304f4-355b-48d0-b649-e24b9cbf0ded",
-          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/47a4d85a-1150-4e5d-abc2-5c642445ff12",
+          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/57dc6051-beba-4ea8-a547-4f692f20102c",
+          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/57dc6051-beba-4ea8-a547-4f692f20102c",
           "alt": "Men",
           "action": {
-            "title": "Discover Fresh Looks",
             "href": "/men",
-            "label": "Shop the Collection",
-            "subTitle": "Modern men's clothing and accessories."
+            "label": "Confira",
+            "subTitle": "Lançamentos de Acessorios toda semana",
+            "title": "Acessorios"
           }
         },
         {
-          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/1226ef79-c7e0-403c-b716-b6b9af3f2936",
-          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/f7ea4cbe-7498-4e64-9205-c741753edfcc",
+          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/fd83c2e1-7436-4bf0-aa29-97b55d19812f",
+          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/fd83c2e1-7436-4bf0-aa29-97b55d19812f",
           "action": {
-            "label": "Shop Now!",
+            "label": "Confira",
             "href": "/women",
-            "title": "Embrace New Trends",
-            "subTitle": "Stylish clothes and accessories."
+            "subTitle": "Abrace novas tendências",
+            "title": "Tendências"
           },
           "alt": "Woman"
         }

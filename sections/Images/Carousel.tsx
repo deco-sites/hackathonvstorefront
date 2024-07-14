@@ -140,14 +140,6 @@ function Carousel(
         "sm:grid-cols-[112px_1fr_112px] sm:min-h-min",
         "w-full " + classSlider,
       )}
-      hx-get={useSection({
-        props: {
-          index: index >= lengthImage ? 0 : index + 1,
-          classSlider: "slide-prev",
-        },
-      })}
-      hx-target="closest section"
-      hx-swap="outerHTML transition:true"
     >
       <div class="col-span-full row-span-full">
         <BannerItem image={images[index]} lcp={preload} />
@@ -160,8 +152,8 @@ function Carousel(
           hx-get={useSection({
             props: { index: index - 1, classSlider: "slide-prev" },
           })}
-          hx-target="closest div"
-          hx-swap="outerHTML transition:false"
+          hx-target="closest section"
+          hx-swap="outerHTML transition:true"
         >
           <Icon id="chevron-right" class="rotate-180" />
         </button>
@@ -174,8 +166,8 @@ function Carousel(
           hx-get={useSection({
             props: { index: index + 1, classSlider: "slide-next" },
           })}
-          hx-target="closest div"
-          hx-swap="outerHTML transition:false"
+          hx-target="closest section"
+          hx-swap="outerHTML transition:true"
         >
           <Icon id="chevron-right" />
         </button>

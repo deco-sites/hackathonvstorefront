@@ -112,7 +112,7 @@ export default function Roleta(props: Props) {
                 <>
                     <div class={"w-full lg:w-2/4 flex flex-col gap-4 lg:gap-8"}>
                         <h2 class="text-xl lg:text-3xl font-bold">{title}</h2>
-                        {description && <span class={" max-w-2xl mx-auto"} dangerouslySetInnerHTML={{ __html: description }}></span>}
+                        {description && <span class={" max-w-2xl "} dangerouslySetInnerHTML={{ __html: description }}></span>}
                         <button id="girar" class="border border-primary px-8 py-4 uppercase text-primary hover:bg-primary hover:text-white font-bold duration-300 mt-3 max-w-48" >
                             {ctaStart}
                         </button>
