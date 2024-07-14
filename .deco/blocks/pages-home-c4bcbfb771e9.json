@@ -41,7 +41,9 @@
           "alt": "Woman"
         }
       ],
-      "preload": true
+      "preload": true,
+      "index": 0,
+      "classSlider": " "
     },
     {
       "__resolveType": "site/sections/Images/CarrouselBrand.tsx",
