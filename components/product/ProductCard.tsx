@@ -56,7 +56,7 @@ function ProductCard({
 
   const item = mapProductToAnalyticsItem({ product, price, listPrice, index });
 
-  {/* Add click event to dataLayer */}
+  {/* Add click event to dataLayer */ }
   const event = useSendEvent({
     on: "click",
     event: {
@@ -153,27 +153,10 @@ function ProductCard({
           </span>
         </div>
 
-        <div class="absolute bottom-0 right-0">
+        <div class="absolute top-2 right-2">
           <WishlistButton item={item} variant="icon" />
         </div>
       </figure>
-
-      <a href={relativeUrl} class="pt-5">
-        <span class="font-medium">
-          {title}
-        </span>
-
-        <div class="flex gap-2 pt-2">
-          {listPrice && (
-            <span class="line-through font-normal text-gray-400">
-              {formatPrice(listPrice, offers?.priceCurrency)}
-            </span>
-          )}
-          <span class="font-medium text-base-400">
-            {formatPrice(price, offers?.priceCurrency)}
-          </span>
-        </div>
-      </a>
 
       {/* SKU Selector */}
       {variants.length > 1 && firstVariantName !== shoeSizeVariant && (
@@ -195,7 +178,24 @@ function ProductCard({
         </ul>
       )}
 
-      <div>
+      <a href={relativeUrl} class="pt-2">
+        <span class="font-medium">
+          {title}
+        </span>
+
+        <div class="flex gap-2 pt-2">
+          {listPrice && (
+            <span class="line-through font-normal text-gray-400">
+              {formatPrice(listPrice, offers?.priceCurrency)}
+            </span>
+          )}
+          <span class=" font-bold text-base text-base-400">
+            {formatPrice(price, offers?.priceCurrency)}
+          </span>
+        </div>
+      </a>
+
+      <div class="mt-auto pt-2">
         {inStock
           ? (
             <AddToCartButton
@@ -203,11 +203,10 @@ function ProductCard({
               seller={seller}
               item={item}
               class={clx(
-                "btn",
-                "btn-outline justify-start border-none !text-sm !font-medium px-0 no-animation w-full",
-                "hover:!bg-transparent",
+                "btn border rounded-none text-center font-bold uppercase mx-auto flex justify-center hover:bg-primary hover:text-white",
+                "btn-outline justify-start !text-sm !font-medium px-0 no-animation w-full",
                 "disabled:!bg-transparent disabled:!opacity-50",
-                "btn-primary hover:!text-primary disabled:!text-primary",
+                "btn-primary disabled:!text-primary",
               )}
             />
           )

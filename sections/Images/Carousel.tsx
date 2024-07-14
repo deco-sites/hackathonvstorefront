@@ -40,12 +40,9 @@ export interface Props {
    */
   preload?: boolean;
 
-  /**
-   * @title Autoplay interval
-   * @description time (in seconds) to start the carousel autoplay
-   */
-  interval?: number;
+  /**@hidden true */
   index: number;
+  /**@hidden true */
   classSlider: string;
 }
 
@@ -127,7 +124,7 @@ function BannerItem(
 }
 
 function Carousel(
-  { images = [], preload, interval, index = 0, classSlider }: Props,
+  { images = [], preload, index = 0, classSlider }: Props,
 ) {
   const id = useId();
 
@@ -151,7 +148,6 @@ function Carousel(
       })}
       hx-target="closest section"
       hx-swap="outerHTML transition:true"
-      hx-trigger={`load once delay:${interval || 4}s`}
     >
       <div class="col-span-full row-span-full">
         <BannerItem image={images[index]} lcp={preload} />
@@ -164,8 +160,8 @@ function Carousel(
           hx-get={useSection({
             props: { index: index - 1, classSlider: "slide-prev" },
           })}
-          hx-target="closest section"
-          hx-swap="outerHTML transition:true"
+          hx-target="closest div"
+          hx-swap="outerHTML transition:false"
         >
           <Icon id="chevron-right" class="rotate-180" />
         </button>
@@ -178,8 +174,8 @@ function Carousel(
           hx-get={useSection({
             props: { index: index + 1, classSlider: "slide-next" },
           })}
-          hx-target="closest section"
-          hx-swap="outerHTML transition:true"
+          hx-target="closest div"
+          hx-swap="outerHTML transition:false"
         >
           <Icon id="chevron-right" />
         </button>

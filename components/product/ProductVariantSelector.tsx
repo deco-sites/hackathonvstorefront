@@ -27,9 +27,9 @@ const colors: Record<string, string | undefined> = {
 const useStyles = (value: string, checked: boolean) => {
   if (colors[value]) {
     return clx(
-      "border border-base-300 rounded-full",
-      "w-12 h-12 block",
-      "border border-[#C9CFCF] rounded-full",
+      "border border-base-300 ",
+      "w-6 h-6 block",
+      "border border-[#C9CFCF] ",
       "ring-2 ring-offset-2",
       checked ? "ring-primary" : "ring-transparent",
     );
