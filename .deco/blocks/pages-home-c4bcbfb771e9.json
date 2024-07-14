@@ -369,26 +369,26 @@
       "cupons": [
         {
           "cupom": "10%OFF",
-          "color": "#ff0000",
+          "color": "#ac7b84",
           "cupum": "10%OFF"
         },
         {
           "cupom": "5%OFF",
-          "color": "#00eeff",
+          "color": "#b84a62",
           "cupum": "5%OFF"
         },
         {
           "cupom": "15%OFF",
-          "color": "#c8ff00",
+          "color": "#3c3983",
           "cupum": "15%OFF"
         },
         {
           "cupom": "15%OFF",
-          "color": "#3f67a6",
+          "color": "#f5a6e6",
           "cupum": "12%OFF"
         },
         {
-          "color": "#2a4aac",
+          "color": "#c9cebd",
           "cupum": "8%OFF"
         }
       ],
