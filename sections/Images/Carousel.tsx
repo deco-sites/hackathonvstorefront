@@ -45,7 +45,9 @@ export interface Props {
    * @description time (in seconds) to start the carousel autoplay
    */
   interval?: number;
+  /**@hidden true */
   index: number;
+  /**@hidden true */
   classSlider: string;
 }
 
