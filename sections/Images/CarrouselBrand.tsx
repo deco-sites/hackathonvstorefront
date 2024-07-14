@@ -16,9 +16,10 @@ export default function CarrouselBrand(props: Props) {
 
   return (
     <div class={"w-full h-full flex   "}>
-      <ul class="w-full h-full flex flex-row gap-8 justify-between container py-8 divide-solid overflow-auto px-4 lg:px-0">
+      <ul class="w-full h-full flex flex-row gap-8 justify-between container py-12 divide-solid overflow-auto px-4 lg:px-0">
         {imgs?.map((item) => (
           <Image
+            class="w-full h-full aspect-square object-contain max-h-[60px]"
             src={item.src}
             alt={item.alt}
             height={50}

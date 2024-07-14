@@ -58,7 +58,7 @@ const Mosaic = ({
 
   return (
     <div
-      className="container py-7 max-h-[700px] grid grid-cols-3 grid-rows-2 gap-2"
+      className="container py-5 sm:py-16 max-h-[700px] grid grid-cols-3 grid-rows-2 gap-2"
       style={{ gridTemplateAreas: GRID }}
     >
       {banners?.map((banner: Banner, index: number) => (

@@ -1,4 +1,4 @@
-import type { HTMLWidget, ImageWidget } from "apps/admin/widgets.ts";
+import type { HTMLWidget, ImageWidget, RichText } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import { useDevice } from "deco/hooks/useDevice.ts";
 import { useSection } from "deco/hooks/useSection.ts";
@@ -21,6 +21,24 @@ import {
   SIDEMENU_CONTAINER_ID,
   SIDEMENU_DRAWER_ID,
 } from "../../constants.ts";
+import { useScript } from "deco/hooks/useScript.ts";
+
+const scrollBottom = () => {
+  const alert = document.querySelector(".preHeader");
+  const categories = document.querySelector("#categories");
+
+  self.addEventListener("scroll", function () {
+    const scrollTop = self.scrollY || document.documentElement.scrollTop;
+
+    if (scrollTop > 120) {
+      alert.style.display = "none";
+      categories.style.display = "none";
+    } else {
+      alert.style.display = "flex";
+      categories.style.display = "flex";
+    }
+  });
+};
 
 export interface Logo {
   src: ImageWidget;
@@ -64,7 +82,7 @@ export interface SiteNavigationElement extends SiteNavigationElementLeaf {
 }
 
 export interface SectionProps {
-  alerts?: HTMLWidget[];
+  alerts?: RichText[];
 
   /**
    * @title Navigation items
@@ -87,9 +105,7 @@ export interface SectionProps {
 
 type Props = Omit<SectionProps, "alert" | "variant">;
 
-const Desktop = (
-  { navItems, logo, searchbar }: Props,
-) => (
+const Desktop = ({ navItems, logo, searchbar }: Props) => (
   <>
     <Modal id={SEARCHBAR_POPUP_ID}>
       <div
@@ -100,8 +116,8 @@ const Desktop = (
       </div>
     </Modal>
 
-    <div class="flex flex-col gap-4 pt-5 container border-b border-gray-300">
-      <div class="flex justify-center place-items-center">
+    <div id="header" class="flex flex-col container border-b border-gray-300">
+      <div class="flex justify-center place-items-center pr-4 pt-5 pb-5 ">
         <div class="place-self-start">
           <a href="/" aria-label="Store logo">
             <Image
@@ -120,7 +136,7 @@ const Desktop = (
         >
           <Icon id="search" />
           <span class="text-base-400 truncate">
-            Search products, brands...
+            Pesquise produtos, marcas...
           </span>
         </label>
 
@@ -129,13 +145,16 @@ const Desktop = (
         </div>
       </div>
 
-      <div class="flex justify-center items-center border-t border-gray-300">
+      <div
+        id="categories"
+        class="flex justify-center items-center border-t border-gray-300"
+      >
         <ul class="flex">
-          {navItems?.slice(0, 10).map((item) => <NavItem item={item} />)}
+          {navItems?.slice(0, 10).map((item) => (
+            <NavItem item={item} />
+          ))}
         </ul>
-        <div>
-          {/* ship to */}
-        </div>
+        <div>{/* ship to */}</div>
       </div>
     </div>
   </>
@@ -219,8 +238,7 @@ const Mobile = ({ logo, searchbar }: Props) => (
 function Header({
   alerts = [],
   logo = {
-    src:
-      "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/986b61d4-3847-4867-93c8-b550cb459cc7",
+    src: "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/986b61d4-3847-4867-93c8-b550cb459cc7",
     width: 100,
     height: 16,
     alt: "Logo",
@@ -230,20 +248,28 @@ function Header({
   const device = useDevice();
 
   return (
-    <header
-      style={{
-        height: device === "desktop"
-          ? HEADER_HEIGHT_DESKTOP
-          : HEADER_HEIGHT_MOBILE,
-      }}
-    >
-      <div class="bg-base-100 fixed w-full z-40">
-        {alerts.length > 0 && <Alert alerts={alerts} />}
-        {device === "desktop"
-          ? <Desktop logo={logo} {...props} />
-          : <Mobile logo={logo} {...props} />}
-      </div>
-    </header>
+    <>
+      <script
+        type="module"
+        dangerouslySetInnerHTML={{ __html: useScript(scrollBottom) }}
+      />
+
+      <header
+        style={{
+          height:
+            device === "desktop" ? HEADER_HEIGHT_DESKTOP : HEADER_HEIGHT_MOBILE,
+        }}
+      >
+        <div class="bg-base-100 fixed w-full z-40">
+          {alerts.length > 0 && <Alert alerts={alerts} />}
+          {device === "desktop" ? (
+            <Desktop logo={logo} {...props} />
+          ) : (
+            <Mobile logo={logo} {...props} />
+          )}
+        </div>
+      </header>
+    </>
   );
 }
 

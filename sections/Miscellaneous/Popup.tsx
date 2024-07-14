@@ -28,6 +28,8 @@ interface Layout {
   title?: string;
   description?: string;
   placeholder?: string;
+  button?: string;
+  copy?: string;
   image?: ImageWidget;
   widht?: number;
   height?: number;
@@ -65,16 +67,20 @@ const Popup = ({ layout, behavior, isOpen, firstRender = false }: Props) => {
               hx-target="closest section"
               className="w-8 h-8 rounded-full flex justify-center items-center absolute top-4 right-4 bg-white z-50 cursor-pointer"
             >
-              <Icon id="close" />
+              <Icon id="close" class="text-primary" />
             </button>
 
-            <div class="flex flex-col gap-4 w-[55%] m-[20px]">
+            <div class="flex flex-col gap-4 w-full lg:w-[55%] m-[20px]">
               {layout?.title && (
-                <p class="text-4xl font-bold text-center ">{layout?.title}</p>
+                <p class="lg:text-7xl text-4xl font-bold text-center text-primary">
+                  {layout?.title}
+                </p>
               )}
 
               {layout?.description && (
-                <p class="text-center ">{layout?.description}</p>
+                <p class="text-center text-lg text-primary">
+                  {layout?.description}
+                </p>
               )}
 
               <form
@@ -98,8 +104,10 @@ const Popup = ({ layout, behavior, isOpen, firstRender = false }: Props) => {
                   hx-swap="outerHTML"
                   hx-target="closest section"
                 >
-                  Resgatar
+                  {layout?.button}
                 </button>
+
+                <span class="text-slate-800 text-sm px-1">{layout?.copy}</span>
               </form>
             </div>
 
