@@ -362,6 +362,40 @@
       ]
     },
     {
+      "__resolveType": "site/sections/Roleta/Roleta.tsx",
+      "title": "Gire a Roleta e Ganhe Descontos Exclusivos!",
+      "description": "<p>em-vindo à nossa roleta de prêmios! Gire agora e descubra descontos incríveis e ofertas exclusivas que preparamos especialmente para você. Não perca a chance de economizar em seus produtos favoritos. Boa sorte e boas compras!</p><p>Se precisar de alguma personalização ou informação adicional, me avise!</p>",
+      "ctaStart": "Girar",
+      "cupons": [
+        {
+          "cupom": "10%OFF",
+          "color": "#ac7b84",
+          "cupum": "10%OFF"
+        },
+        {
+          "cupom": "5%OFF",
+          "color": "#b84a62",
+          "cupum": "5%OFF"
+        },
+        {
+          "cupom": "15%OFF",
+          "color": "#3c3983",
+          "cupum": "15%OFF"
+        },
+        {
+          "cupom": "15%OFF",
+          "color": "#f5a6e6",
+          "cupum": "12%OFF"
+        },
+        {
+          "color": "#c9cebd",
+          "cupum": "8%OFF"
+        }
+      ],
+      "descriptionSucces": "<p>Use o código <strong>CUPOM</strong> ao finalizar a sua compra e ganhe um desconto em todos os produtos. Mas corra, essa oferta é por tempo limitado! Adicione seus itens favoritos ao carrinho e aproveite esse presente exclusivo. Boas compras!</p>",
+      "titleSuccess": "Parabéns! Você Ganhou um Cupom Exclusivo!"
+    },
+    {
       "__resolveType": "Newsletter - 01"
     },
     {

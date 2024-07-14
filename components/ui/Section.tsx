@@ -49,7 +49,7 @@ function Container({ class: _class, ...props }: JSX.IntrinsicElements["div"]) {
   );
 }
 
-function Section() {}
+function Section() { }
 
 Section.Container = Container;
 Section.Header = Header;
