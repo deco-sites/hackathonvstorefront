@@ -366,6 +366,24 @@
     },
     {
       "__resolveType": "Footer"
+    },
+    {
+      "__resolveType": "site/sections/Miscellaneous/Popup.tsx",
+      "layout": {
+        "title": "20% OFF",
+        "description": "Venha resgatar essa promoção imperdivel",
+        "placeholder": "E-mail",
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/517ab4c1-a5d0-4b9d-bf5f-b9bf7b00690c",
+        "button": "Resgatar cupom",
+        "copy": "Insira seu e-mail e receba um cupom de desconto exclusivo diretamente na sua caixa de entrada."
+      },
+      "behavior": {
+        "timing": true,
+        "userSession": false,
+        "userLocalStorage": false,
+        "clientExit": true,
+        "delay": 2
+      }
     }
   ],
   "__resolveType": "website/pages/Page.tsx",
