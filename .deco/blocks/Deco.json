@@ -24,7 +24,7 @@
             "weight": "700"
           }
         ],
-        "family": "Inter"
+        "family": "Poppins"
       }
     ]
   },
@@ -38,7 +38,7 @@
   },
   "mode": "dark",
   "mainColors": {
-    "primary": "#27AE6B",
+    "primary": "#3c3a83",
     "base-100": "#ffffff",
     "secondary": "#101a1b",
     "success": "#219259",

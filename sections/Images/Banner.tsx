@@ -1,4 +1,4 @@
-import { type HTMLWidget, type ImageWidget } from "apps/admin/widgets.ts";
+import { RichText, type ImageWidget } from "apps/admin/widgets.ts";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
 import Section from "../../components/ui/Section.tsx";
 import { clx } from "../../sdk/clx.ts";
@@ -6,7 +6,7 @@ import Image from "apps/website/components/Image.tsx";
 
 export interface Props {
   title: string;
-  description?: HTMLWidget;
+  description?: RichText;
 
   images: {
     mobile: ImageWidget;
@@ -63,7 +63,7 @@ function Banner({ title, description, images, cta }: Props) {
           )}
           {description && (
             <span
-              class="font-normal text-sm md: pt-4 pb-12"
+              class="font-normal text-sm md: pt-4 pb-12 text-primary"
               dangerouslySetInnerHTML={{ __html: description }}
             />
           )}
