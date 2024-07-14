@@ -5,6 +5,8 @@ import Image from "apps/website/components/Image.tsx";
 interface ItemImg {
   alt?: string;
   src: ImageWidget;
+  width?: number;
+  height?: number;
 }
 
 interface Props {
@@ -22,8 +24,8 @@ export default function CarrouselBrand(props: Props) {
             class="w-full h-full aspect-square object-contain max-h-[60px]"
             src={item.src}
             alt={item.alt}
-            height={50}
-            width={200}
+            height={item.height || 60}
+            width={item.width || 170}
             fetchPriority="low"
             loading={"lazy"}
           />

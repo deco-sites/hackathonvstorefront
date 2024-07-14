@@ -630,7 +630,8 @@
     }
   },
   "alerts": [
-    "<p>Ganhe 25% de desconto hoje: <strong>HACKATHON5</strong></p>"
+    "<p>Ganhe 25% de desconto hoje: <strong>HACKATHON5</strong></p>",
+    "<p>Frete grátis acima de <strong>R% 250,00</strong></p>"
   ],
   "variant": "initial",
   "logo": {

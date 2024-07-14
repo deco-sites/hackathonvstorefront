@@ -52,7 +52,9 @@
         },
         {
           "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/ab449185-77a1-47ee-a09b-fdc75f582538",
-          "alt": "deco"
+          "alt": "deco",
+          "width": 70,
+          "height": 60
         },
         {
           "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/3f15e71b-7c79-4295-9e9e-0438a68c498e",
@@ -60,7 +62,9 @@
         },
         {
           "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/c3a96ffe-ca46-4b01-a8f3-f41fb6c9907e",
-          "alt": "deco"
+          "alt": "deco",
+          "width": 80,
+          "height": 60
         },
         {
           "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11549/be636e5e-bb64-477d-a4ed-bd4ef8d308e4",
